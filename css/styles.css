@@ -1,0 +1,25 @@
+.jumbotron h1 {
+    font-family: 'Taviraj', serif;
+    font-size: 60pt;
+}
+
+.jumbotron {
+    background-color: #4682b4;
+    color: black;
+}
+
+.container h1 {
+    font-family: 'Taviraj', serif;
+    font-size: 24pt;
+}
+
+.all-tasks h1 {
+    display: none;
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 24pt;
+}
+
+.all-tasks {
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 18pt;
+}
