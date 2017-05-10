@@ -1,7 +1,7 @@
 function Task(name, duration, difficulty, numberofpeople) {
-    this.taskName = name;
-    this.taskDuration = duration;
-    this.taskDifficulty = difficulty;
+    this.name = name;
+    this.duration = duration;
+    this.difficulty = difficulty;
     this.numberofpeople = numberofpeople;
 }
 
@@ -17,10 +17,12 @@ $(document).ready(function() {
 
         var newTask = new Task(inputtedTaskName, inputtedTaskDuration, inputtedTaskDifficulty, inputtedNumber);
 
-        $("ul#tasks").append("<li><span class='tasks'>" + newTask.taskName + "</span></li>");
+        $('.ticktasks').append('<li>' + inputtedTaskName + '<input type="checkbox" name="myCheckbox">' + '</li>');
+        $("#task").fadeOut();
+        $(".all-tasks").fadeIn();
 
-        $("#task").hide();
-        $(".all-tasks h1").show();
-
+    });
+    $("button#new-task").click(function() {
+        $("form#task").fadeIn();
     });
 });
